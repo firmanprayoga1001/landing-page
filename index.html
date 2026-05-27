@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhamad Firman P. | Developer Portfolio</title>
+    <!-- Menggunakan Font Awesome 6 untuk Ikon Brand Asli -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      :root {
+        --bg-color: #0d1117;
+        --card-bg: #161b22;
+        --border-color: #30363d;
+        --text-main: #c9d1d9;
+        --text-muted: #8b949e;
+        --accent-glow: #58a6ff;
+
+        /* Warna Resmi Brand (Dibuat sedikit lebih soft agar menyatu dengan elegan) */
+        --instagram: #e1306c;
+        --tiktok: #ffffff;
+        --facebook: #1877f2;
+        --whatsapp: #25d366;
+        --dana: #108ee9;
+        --gopay: #00aeb5;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+          sans-serif;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 4rem 1rem;
+      }
+
+      /* Container utama diset ke 80% untuk tampilan desktop */
+      .container {
+        width: 100%;
+        max-width: 80%;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 3.5rem 3rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Profile Section */
+      .profile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid var(--border-color);
+        padding: 4px;
+        margin-bottom: 1.2rem;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin-bottom: 0.4rem;
+        color: var(--text-main);
+      }
+
+      .tagline {
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          SF Mono,
+          Menlo,
+          Consolas,
+          "Courier New",
+          monospace;
+        color: var(--accent-glow);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        background: rgba(88, 166, 255, 0.1);
+        padding: 4px 12px;
+        border-radius: 20px;
+        display: inline-block;
+      }
+
+      .bio {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Section Title */
+      .section-title {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--text-muted);
+        margin: 2.5rem 0 1rem 0;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 8px;
+      }
+
+      /* Links / Buttons Layout - Responsive Multi-Kolom di Desktop */
+      .links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+
+      .btn-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        color: var(--text-main);
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition:
+          border-color 0.2s ease,
+          background-color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .btn-link .left-content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .btn-link i {
+        font-size: 1.15rem;
+        width: 20px;
+        text-align: center;
+        color: var(--text-muted);
+        transition: color 0.2s ease;
+      }
+
+      /* Efek Hover Premium Menyesuaikan Karakter Warna Brand */
+      .btn-link:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-instagram:hover {
+        border-color: var(--instagram);
+      }
+      .btn-instagram:hover i {
+        color: var(--instagram);
+      }
+
+      .btn-tiktok:hover {
+        border-color: #8b949e;
+      }
+      .btn-tiktok:hover i {
+        color: var(--tiktok);
+      }
+
+      .btn-facebook:hover {
+        border-color: var(--facebook);
+      }
+      .btn-facebook:hover i {
+        color: var(--facebook);
+      }
+
+      .btn-whatsapp:hover {
+        border-color: var(--whatsapp);
+      }
+      .btn-whatsapp:hover i {
+        color: var(--whatsapp);
+      }
+
+      .btn-dana:hover {
+        border-color: var(--dana);
+      }
+      .btn-dana:hover i {
+        color: var(--dana);
+      }
+
+      .btn-gopay:hover {
+        border-color: var(--gopay);
+      }
+      .btn-gopay:hover i {
+        color: var(--gopay);
+      }
+
+      /* Icon kecil di sebelah kanan */
+      .arrow-icon,
+      .copy-icon {
+        font-size: 0.8rem !important;
+        color: var(--border-color);
+        transition: color 0.2s ease;
+      }
+
+      .btn-link:hover .arrow-icon,
+      .btn-link:hover .copy-icon {
+        color: var(--text-muted);
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 4rem;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-align: center;
+        border-top: 1px solid var(--border-color);
+        padding-top: 1.5rem;
+      }
+
+      /* Responsive Breakpoints */
+      @media (max-width: 992px) {
+        .container {
+          max-width: 90%;
+          padding: 2.5rem 2rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .container {
+          max-width: 100%;
+          padding: 1.5rem 1rem;
+          border: none;
+          background: transparent;
+          box-shadow: none;
+        }
+        body {
+          padding: 1rem 0;
+          align-items: flex-start;
+        }
+        .links-grid {
+          grid-template-columns: 1fr; /* Otomatis kembali 1 kolom vertikal di HP */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Profile Section -->
+      <div class="profile-header">
+        <img
+          src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=150"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+
+        <h1>FIRMAN PRAYOGA</h1>
+        <div class="tagline">
+          const developer = ['Web', 'Network', 'Creative'];
+        </div>
+        <p class="bio">
+          Bukan sekadar menulis baris kode, tapi membangun solusi digital yang
+          responsif, efisien, dan berdampak nyata. Hubungi saya atau dukung
+          proyek saya di bawah ini.
+        </p>
+      </div>
+
+      <!-- Media Sosial -->
+      <div class="section-title">Media Sosial</div>
+      <div class="links-grid">
+        <a
+          href="https://instagram.com/firmanprayoga_19"
+          target="_blank"
+          class="btn-link btn-instagram"
+        >
+          <div class="left-content">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+        </a>
+        <a
+          href="https://tiktok.com/@dummy13gamemodder"
+          target="_blank"
+          class="btn-link btn-tiktok"
+        >
+          <div class="left-content">
+            <i class="fa-brands fa-tiktok"></i>
+            <span>TikTok</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+        </a>
+        <a
+          href="https://facebook.com/firmaniac.devilmaycry"
+          target="_blank"
+          class="btn-link btn-facebook"
+        >
+          <div class="left-content">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+        </a>
+      </div>
+
+      <!-- Kontak Langsung -->
+      <div class="section-title">Kontak</div>
+      <div class="links-grid">
+        <a
+          href="https://wa.me/6281289497716?text=Halo%20saya%20tertarik%20bekerja%20sama"
+          target="_blank"
+          class="btn-link btn-whatsapp"
+        >
+          <div class="left-content">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Whatsapp</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+        </a>
+      </div>
+
+      <!-- Dukungan & Donasi -->
+      <div class="section-title">Donasi</div>
+      <div class="links-grid">
+        <div
+          onclick="copyToClipboard('0812-8949-7716', this)"
+          class="btn-link btn-dana"
+        >
+          <div class="left-content">
+            <i class="fa-solid fa-wallet"></i>
+            <span class="wallet-text">DANA (0812-8949-7716)</span>
+          </div>
+          <i class="fa-regular fa-copy copy-icon"></i>
+        </div>
+        <div
+          onclick="copyToClipboard('0812-8949-7716', this)"
+          class="btn-link btn-gopay"
+        >
+          <div class="left-content">
+            <i class="fa-solid fa-credit-card"></i>
+            <span class="wallet-text">GoPay (0812-8949-7716)</span>
+          </div>
+          <i class="fa-regular fa-copy copy-icon"></i>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 Code & Design by Firman Prayoga</p>
+      </footer>
+    </div>
+
+    <!-- Script Salin Clipboard Otomatis Tanpa Pop-up Kuno -->
+    <script>
+      function copyToClipboard(number, element) {
+        navigator.clipboard
+          .writeText(number)
+          .then(() => {
+            const textNode = element.querySelector(".wallet-text");
+            const originalText = textNode.innerText;
+
+            textNode.innerText = "Nomor Tersalin!";
+            element.style.borderColor = "var(--accent-glow)";
+
+            setTimeout(() => {
+              textNode.innerText = originalText;
+              element.style.borderColor = "";
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Gagal menyalin text: ", err);
+          });
+      }
+    </script>
+  </body>
+</html>
