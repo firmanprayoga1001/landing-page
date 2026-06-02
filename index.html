@@ -18,13 +18,18 @@
         --text-muted: #8b949e;
         --accent-glow: #58a6ff;
 
-        /* Warna Resmi Brand (Dibuat sedikit lebih soft agar menyatu dengan elegan) */
+        /* Warna Resmi Brand */
         --instagram: #e1306c;
         --tiktok: #ffffff;
         --facebook: #1877f2;
         --whatsapp: #25d366;
         --dana: #108ee9;
         --gopay: #00aeb5;
+        --telegram: #0088cc;
+        --polar: #24252a;
+        --polar-border: #4e5664;
+        --github: #24292e;
+        --invitation: #2d4a43;
       }
 
       * {
@@ -151,6 +156,14 @@
 
       .btn-link .left-content {
         display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .btn-link .icon-title-wrapper {
+        display: flex;
         align-items: center;
         gap: 12px;
       }
@@ -170,47 +183,35 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
-      .btn-instagram:hover {
-        border-color: var(--instagram);
-      }
-      .btn-instagram:hover i {
-        color: var(--instagram);
-      }
+      .btn-instagram:hover { border-color: var(--instagram); }
+      .btn-instagram:hover i { color: var(--instagram); }
 
-      .btn-tiktok:hover {
-        border-color: #8b949e;
-      }
-      .btn-tiktok:hover i {
-        color: var(--tiktok);
-      }
+      .btn-tiktok:hover { border-color: #8b949e; }
+      .btn-tiktok:hover i { color: var(--tiktok); }
 
-      .btn-facebook:hover {
-        border-color: var(--facebook);
-      }
-      .btn-facebook:hover i {
-        color: var(--facebook);
-      }
+      .btn-facebook:hover { border-color: var(--facebook); }
+      .btn-facebook:hover i { color: var(--facebook); }
 
-      .btn-whatsapp:hover {
-        border-color: var(--whatsapp);
-      }
-      .btn-whatsapp:hover i {
-        color: var(--whatsapp);
-      }
+      .btn-whatsapp:hover { border-color: var(--whatsapp); }
+      .btn-whatsapp:hover i { color: var(--whatsapp); }
 
-      .btn-dana:hover {
-        border-color: var(--dana);
-      }
-      .btn-dana:hover i {
-        color: var(--dana);
-      }
+      .btn-telegram:hover { border-color: var(--telegram); }
+      .btn-telegram:hover i { color: var(--telegram); }
 
-      .btn-gopay:hover {
-        border-color: var(--gopay);
-      }
-      .btn-gopay:hover i {
-        color: var(--gopay);
-      }
+      .btn-polar:hover { border-color: var(--polar-border); background-color: var(--polar); }
+      .btn-polar:hover i.fa-gamepad { color: #facc15; }
+
+      .btn-github:hover { border-color: #768390; background-color: var(--github); }
+      .btn-github:hover i { color: #ffffff; }
+
+      .btn-invitation:hover { border-color: #52877a; background-color: var(--invitation); }
+      .btn-invitation:hover i { color: #a7f3d0; }
+
+      .btn-dana:hover { border-color: var(--dana); }
+      .btn-dana:hover i { color: var(--dana); }
+
+      .btn-gopay:hover { border-color: var(--gopay); }
+      .btn-gopay:hover i { color: var(--gopay); }
 
       /* Icon kecil di sebelah kanan */
       .arrow-icon,
@@ -218,11 +219,20 @@
         font-size: 0.8rem !important;
         color: var(--border-color);
         transition: color 0.2s ease;
+        align-self: center;
       }
 
       .btn-link:hover .arrow-icon,
       .btn-link:hover .copy-icon {
         color: var(--text-muted);
+      }
+
+      /* Sub-text styling inside buttons */
+      .btn-subtext {
+        font-size: 0.8rem;
+        opacity: 0.7;
+        padding-left: 32px;
+        text-align: left;
       }
 
       /* Footer */
@@ -280,67 +290,8 @@
         </p>
       </div>
 
-      
-
-      <!-- Produk -->
-<div class="section-title">Product & Project</div>
-<div class="links-grid">
-  
-  <!-- Tombol Polar (ChaosMod) -->
-  <a
-    href="https://polar.sh/checkout/polar_c_fjPTVZsGeotd79qNix7irAWVWafdBgk0EbmQD0ZuCO6"
-    target="_blank"
-    class="btn-link btn-polar"
-    style="display: flex; align-items: center; justify-content: space-between; width: 100%;"
-  >
-    <div class="left-content" style="display: flex; flex-direction: column; gap: 4px;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fa-solid fa-gamepad" style="width: 16px; text-align: center;"></i>
-        <span style="font-weight: bold;">ChaosMod-V2 GTA SA</span>
-      </div>
-      <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px;">For PC dan Mobile</span>
-      <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px; color: #facc15;">Discount Code: dummy13gamemodder</span>
-    </div>
-    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon" style="align-self: center;"></i>
-  </a>
-
-  <!-- Undangan Digital -->
-  <a
-    href="https://melatipagi.kesug.com"
-    target="_blank"
-    class="btn-link btn-invitation"
-    style="display: flex; align-items: center; justify-content: space-between; width: 100%;"
-  >
-    <div class="left-content" style="display: flex; flex-direction: column; gap: 4px;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fa-solid fa-envelope-open-text" style="width: 16px; text-align: center;"></i>
-        <span style="font-weight: bold;">Undangan Digital</span>
-      </div>
-      <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px;">Elegant & Modern Invitation</span>
-    </div>
-    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon" style="align-self: center;"></i>
-  </a>
-
-  <!-- GitHub Profile -->
-  <a
-    href="https://github.com/firmanprayoga1001"
-    target="_blank"
-    class="btn-link btn-github"
-    style="display: flex; align-items: center; justify-content: space-between; width: 100%;"
-  >
-    <div class="left-content" style="display: flex; flex-direction: column; gap: 4px;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fa-brands fa-github" style="width: 16px; text-align: center;"></i>
-        <span style="font-weight: bold;">GitHub Profile</span>
-      </div>
-      <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px;">Source Code & Project</span>
-    </div>
-    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon" style="align-self: center;"></i>
-  </a>
-
-</div>
-      <!-- Produk -->
-  <div class="section-title">Product & Project</div>
+      <!-- Product & Project Section -->
+      <div class="section-title">Product & Project</div>
       <div class="links-grid">
         
         <!-- Tombol Polar (ChaosMod) -->
@@ -348,54 +299,52 @@
           href="https://polar.sh/checkout/polar_c_fjPTVZsGeotd79qNix7irAWVWafdBgk0EbmQD0ZuCO6"
           target="_blank"
           class="btn-link btn-polar"
-          style="display: flex; align-items: center; justify-content: space-between; width: 100%;"
         >
-          <div class="left-content" style="display: flex; flex-direction: column; gap: 4px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <i class="fa-solid fa-gamepad" style="width: 16px; text-align: center;"></i>
+          <div class="left-content">
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-gamepad"></i>
               <span style="font-weight: bold;">ChaosMod-V2 GTA SA</span>
             </div>
-            <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px;">For PC dan Mobile</span>
-            <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px; color: #facc15;">Discount Code: dummy13gamemodder</span>
+            <span class="btn-subtext">For PC dan Mobile</span>
+            <span class="btn-subtext" style="color: #facc15;">Discount Code: dummy13gamemodder</span>
           </div>
-          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon" style="align-self: center;"></i>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
-      
+
         <!-- Undangan Digital -->
         <a
           href="https://melatipagi.kesug.com"
           target="_blank"
           class="btn-link btn-invitation"
-          style="display: flex; align-items: center; justify-content: space-between; width: 100%;"
         >
-          <div class="left-content" style="display: flex; flex-direction: column; gap: 4px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <i class="fa-solid fa-envelope-open-text" style="width: 16px; text-align: center;"></i>
+          <div class="left-content">
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-envelope-open-text"></i>
               <span style="font-weight: bold;">Undangan Digital</span>
             </div>
-            <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px;">Elegant & Modern Invitation</span>
+            <span class="btn-subtext">Elegant & Modern Invitation</span>
           </div>
-          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon" style="align-self: center;"></i>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
-      
+
         <!-- GitHub Profile -->
         <a
           href="https://github.com/firmanprayoga1001"
           target="_blank"
           class="btn-link btn-github"
-          style="display: flex; align-items: center; justify-content: space-between; width: 100%;"
         >
-          <div class="left-content" style="display: flex; flex-direction: column; gap: 4px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <i class="fa-brands fa-github" style="width: 16px; text-align: center;"></i>
+          <div class="left-content">
+            <div class="icon-title-wrapper">
+              <i class="fa-brands fa-github"></i>
               <span style="font-weight: bold;">GitHub Profile</span>
             </div>
-            <span style="font-size: 0.8rem; opacity: 0.8; padding-left: 26px;">Source Code & Project</span>
+            <span class="btn-subtext">Source Code & Project</span>
           </div>
-          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon" style="align-self: center;"></i>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
-      
+
       </div>
+
       <!-- Media Sosial -->
       <div class="section-title">Media Sosial</div>
       <div class="links-grid">
@@ -405,8 +354,10 @@
           class="btn-link btn-instagram"
         >
           <div class="left-content">
-            <i class="fa-brands fa-instagram"></i>
-            <span>Instagram</span>
+            <div class="icon-title-wrapper">
+              <i class="fa-brands fa-instagram"></i>
+              <span style="font-weight: 500;">Instagram</span>
+            </div>
           </div>
           <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
@@ -416,22 +367,13 @@
           class="btn-link btn-tiktok"
         >
           <div class="left-content">
-            <i class="fa-brands fa-tiktok"></i>
-            <span>TikTok</span>
+            <div class="icon-title-wrapper">
+              <i class="fa-brands fa-tiktok"></i>
+              <span style="font-weight: 500;">TikTok</span>
+            </div>
           </div>
           <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
-        <!-- <a
-          href="https://facebook.com/firmaniac.devilmaycry"
-          target="_blank"
-          class="btn-link btn-facebook"
-        >
-          <div class="left-content">
-            <i class="fa-brands fa-facebook-f"></i>
-            <span>Facebook</span>
-          </div>
-          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-        </a> -->
       </div>
 
       <!-- Kontak Langsung -->
@@ -443,14 +385,14 @@
           class="btn-link btn-telegram"
         >
           <div class="left-content">
-            <i class="fa-brands fa-telegram"></i>
-            <span>Telegram</span>
+            <div class="icon-title-wrapper">
+              <i class="fa-brands fa-telegram"></i>
+              <span style="font-weight: 500;">Telegram</span>
+            </div>
           </div>
           <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
       </div>
-
-      
 
       <!-- Dukungan & Donasi -->
       <div class="section-title">Donation</div>
@@ -460,8 +402,10 @@
           class="btn-link btn-dana"
         >
           <div class="left-content">
-            <i class="fa-solid fa-wallet"></i>
-            <span class="wallet-text">DANA (0812-8949-7716)</span>
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-wallet"></i>
+              <span class="wallet-text" style="font-weight: 500;">DANA (0812-8949-7716)</span>
+            </div>
           </div>
           <i class="fa-regular fa-copy copy-icon"></i>
         </div>
@@ -470,8 +414,10 @@
           class="btn-link btn-gopay"
         >
           <div class="left-content">
-            <i class="fa-solid fa-credit-card"></i>
-            <span class="wallet-text">GoPay (0812-8949-7716)</span>
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-credit-card"></i>
+              <span class="wallet-text" style="font-weight: 500;">GoPay (0812-8949-7716)</span>
+            </div>
           </div>
           <i class="fa-regular fa-copy copy-icon"></i>
         </div>
@@ -483,7 +429,7 @@
       </footer>
     </div>
 
-    <!-- Script Salin Clipboard Otomatis Tanpa Pop-up Kuno -->
+    <!-- Script Salin Clipboard Otomatis -->
     <script>
       function copyToClipboard(number, element) {
         navigator.clipboard
