@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChaosMod-V2 GTA SA | Detail Produk</title>
+    <title>ChaosMod-V2 GTA SA | Product Details</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,12 +17,12 @@
         --text-muted: #8b949e;
         --accent-glow: #58a6ff;
 
-        /* Warna Resmi Brand */
+        /* Brand Official Colors */
         --polar: #24252a;
         --polar-border: #4e5664;
       }
 
-      /* Mengaktifkan efek scroll halus saat tombol diklik */
+      /* Enable smooth scrolling */
       html {
         scroll-behavior: smooth;
       }
@@ -46,7 +46,7 @@
         padding: 4rem 1rem;
       }
 
-      /* Container utama diset ke 80% mengikuti index.html */
+      /* Main container set to 80% width */
       .container {
         width: 100%;
         max-width: 80%;
@@ -57,7 +57,7 @@
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
       }
 
-      /* Tombol Kembali dengan Style Minimalis */
+      /* Minimalist Back Button */
       .back-btn {
         display: inline-flex;
         align-items: center;
@@ -74,11 +74,11 @@
         color: var(--accent-glow);
       }
 
-      /* Wrapper Gambar Produk Rasio Murni 16:9 */
+      /* Product Image Wrapper 16:9 Ratio */
       .product-image-container {
         width: 100%;
         position: relative;
-        padding-top: 56.25%; /* Trik CSS untuk mengunci aspek rasio 16:9 */
+        padding-top: 56.25%;
         border: 1px solid var(--border-color);
         border-radius: 8px;
         overflow: hidden;
@@ -95,7 +95,7 @@
         object-fit: cover;
       }
 
-      /* Header Detail Produk */
+      /* Product Header */
       .product-header {
         margin-bottom: 1.5rem;
       }
@@ -136,7 +136,7 @@
         letter-spacing: 0.5px;
       }
 
-      /* Section Deskripsi */
+      /* Section Titles */
       .section-title {
         font-size: 0.8rem;
         font-weight: 600;
@@ -158,19 +158,67 @@
         margin-bottom: 1rem;
       }
 
-      /* Grid untuk Fitur Dua Bahasa */
-      .features-lang-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 1.5rem;
+      /* Installation Info Text Block */
+      .install-notice {
+        background: rgba(88, 166, 255, 0.03);
+        border: 1px dashed rgba(88, 166, 255, 0.3);
+        border-radius: 8px;
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
       }
 
+      .install-block {
+        background: rgba(255, 255, 255, 0.01);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .install-block h3 {
+        font-size: 1rem;
+        color: var(--accent-glow);
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      /* Styled Installation Lists */
+      .install-list {
+        padding-left: 1.5rem;
+      }
+
+      .install-list li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .install-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      .install-list a {
+        color: #facc15;
+        text-decoration: underline;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      .install-list a:hover {
+        color: #fff;
+      }
+
+      /* Features Column Layout */
       .lang-column {
         background: rgba(255, 255, 255, 0.01);
         border: 1px solid var(--border-color);
         border-radius: 8px;
         padding: 1.5rem;
+        margin-top: 1.5rem;
       }
 
       .lang-column h3 {
@@ -228,11 +276,11 @@
         display: block;
       }
 
-      /* Wrapper Video YouTube Rasio Responsif 16:9 */
+      /* YouTube Video Container 16:9 */
       .video-container {
         width: 100%;
         position: relative;
-        padding-top: 56.25%; /* Mengunci Aspek Rasio Video 16:9 */
+        padding-top: 56.25%;
         border: 1px solid var(--border-color);
         border-radius: 8px;
         overflow: hidden;
@@ -249,7 +297,7 @@
         border: none;
       }
 
-      /* Action Button Box (Tempat Meletakkan Tombol) */
+      /* Action Button Box */
       .action-box {
         margin-top: 3rem;
         display: flex;
@@ -303,7 +351,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
-      /* Efek Hover Spesifik Polar */
+      /* Specific Hover Effects */
       .btn-polar:hover {
         border-color: var(--polar-border);
         background-color: var(--polar);
@@ -312,7 +360,6 @@
         color: #facc15;
       }
 
-      /* Style Spesifik Tombol Scroll Eceran */
       .btn-scroll-eceran:hover {
         border-color: var(--accent-glow);
         background-color: rgba(88, 166, 255, 0.05);
@@ -375,7 +422,7 @@
   <body>
     <div class="container">
       <a href="index.html" class="back-btn">
-        <i class="fa-solid fa-arrow-left"></i> Kembali ke Portfolio
+        <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
       </a>
 
       <div class="product-image-container">
@@ -393,9 +440,9 @@
         </div>
       </div>
 
-      <!-- 4. Tombol Akses Utama (Full Access) & Tombol Scroll Eceran -->
+      <!-- Main Access Buttons -->
       <div class="action-box">
-        <!-- Tombol Utama (Polar) -->
+        <!-- Download Full Access Button (Polar) -->
         <a
           href="https://polar.sh/checkout/polar_c_fjPTVZsGeotd79qNix7irAWVWafdBgk0EbmQD0ZuCO6"
           target="_blank"
@@ -404,48 +451,74 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <i class="fa-solid fa-gamepad"></i>
-              <span style="font-weight: bold; font-size: 1.1rem;">Unduh Mod (Full Access ChaosMod_V2)</span>
+              <span style="font-weight: bold; font-size: 1.1rem;">Download Mod (Full Access ChaosMod_V2)</span>
             </div>
-            <span class="btn-subtext">Dapatkan akses instan seluruh fitur untuk versi PC & Mobile</span>
+            <span class="btn-subtext">Get instant access to all features for both PC & Mobile versions</span>
             <span class="btn-subtext" style="color: #facc15;">Discount Code: dummy13gamemodder</span>
           </div>
           <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
 
-        <!-- Tombol Tambahan: Scroll ke Bagian Get Per Feature -->
+        <!-- Scroll to Single Features Button -->
         <a href="#get-per-feature" class="btn-link btn-scroll-eceran">
           <div class="left-content">
             <div class="icon-title-wrapper">
               <i class="fa-solid fa-tags"></i>
-              <span style="font-weight: bold; font-size: 1.1rem;">Beli Eceran Per Fitur</span>
+              <span style="font-weight: bold; font-size: 1.1rem;">Get Single Features Only</span>
             </div>
-            <span class="btn-subtext">Pilih dan beli fitur tertentu saja secara terpisah sesuai kebutuhan Anda</span>
+            <span class="btn-subtext">Choose and purchase specific single features separately as needed</span>
           </div>
           <i class="fa-solid fa-arrow-down arrow-icon"></i>
         </a>
       </div>
 
-      <div class="section-title">Deskripsi Mod / Mod Description</div>
+      <!-- Description Section -->
+      <div class="section-title">Mod Description</div>
       <div class="description-content">
-        <h3 style="color: yellow">(EN)</h3>
-        <p style="color: yellow">
+        <p>
           Bring total madness to the world of San Andreas with
           <strong>ChaosMod-V2</strong>! This premium script modification is
           specifically designed to trigger random effects manually under user
           control, making gameplay highly unpredictable and full of surprises.
           Perfect for interactive live streaming!
         </p>
-        <h3>(ID)</h3>
-        <p>
-          Bawa kegilaan total ke dalam dunia San Andreas dengan
-          <strong>ChaosMod-V2</strong>! Modifikasi skrip premium ini dirancang
-          khusus untuk memicu efek acak secara manual kendali user, membuat
-          jalannya permainan menjadi sangat tidak terduga dan penuh kejutan.
-          Sangat cocok untuk kebutuhan live streaming interaktif!
-        </p>
-        
+      </div>
+
+      <!-- Installation Guide Section -->
+      <div class="section-title">How to Install</div>
+      <div class="description-content">
+        <div class="install-notice">
+          The mod will only function properly if your game has <strong>CLEO 5</strong>, <strong>CLEO+</strong>, and <strong>gta.exe v1.0 US</strong> installed. Necessary requirement files are provided in the installation steps below. If you download the <strong>ChaosMod-V2 Full Pack</strong>, all required files are already included directly inside the package.
+        </div>
+
+        <!-- Installation Block: Full Pack -->
+        <div class="install-block">
+          <h3><i class="fa-solid fa-box-open"></i> Install ChaosMod-V2 Full Pack:</h3>
+          <ol class="install-list">
+            <li>Download the Chaos Mod V2 Full Pack.</li>
+            <li>Extract the downloaded file.</li>
+            <li>Copy and paste everything into your main game directory, overwrite any existing files if prompted.</li>
+            <li>Enjoy the game!</li>
+          </ol>
+        </div>
+
+        <!-- Installation Block: Per Feature -->
+        <div class="install-block">
+          <h3><i class="fa-solid fa-puzzle-piece"></i> Install Per Feature:</h3>
+          <ol class="install-list">
+            <li>Download the required support files <a href="URL_LINK_GOOGLE_DRIVE_DISINI" target="_blank">here</a>.</li>
+            <li>Download your preferred single feature file.</li>
+            <li>Extract the requirement files, copy and paste everything into your main game directory, and overwrite any existing files.</li>
+            <li>Place the single feature <code style="color: #facc15; font-family: monospace;">.cs</code> file inside the <code style="color: #58a6ff; font-family: monospace;">cleo</code> folder located within your main game directory.</li>
+            <li>Enjoy the game!</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Hotkey Features List -->
+      <div class="description-content">
         <div class="lang-column">
-          <h3><i class="fa-solid fa-globe"></i> Hotkey Features (EN)</h3>
+          <h3><i class="fa-solid fa-crosshairs"></i> Hotkey Features</h3>
           <ul class="features-list">
             <li>
               <span class="feature-name">Enable/Disable Chaos Mod</span>
@@ -527,90 +600,7 @@
         </div>
       </div>
 
-      <div class="features-lang-grid">
-        <div class="lang-column">
-          <h3><i class="fa-solid fa-gamepad"></i> Fitur Hotkey (ID)</h3>
-          <ul class="features-list">
-            <li>
-              <span class="feature-name">Aktifkan/Nonaktifkan Chaos Mod</span>
-              <span class="feature-key">M</span>
-            </li>
-            <li>
-              <span class="feature-name">Teleportasi ke Rumah CJ</span>
-              <span class="feature-key">1</span>
-            </li>
-            <li>
-              <span class="feature-name">Teleportasi Acak</span>
-              <span class="feature-key">2</span>
-            </li>
-            <li>
-              <span class="feature-name">Kesehatan / Armor / Uang</span>
-              <span class="feature-key">3</span>
-            </li>
-            <li>
-              <span class="feature-name">Munculkan Kendaraan Acak</span>
-              <span class="feature-key">5</span>
-            </li>
-            <li>
-              <span class="feature-name">Hapus Kendaraan CJ <span class="driving-mode">(mode mengemudi)</span></span>
-              <span class="feature-key">6</span>
-            </li>
-            <li>
-              <span class="feature-name">Putar Kendaraan <span class="driving-mode">(mode mengemudi)</span></span>
-              <span class="feature-key">7</span>
-            </li>
-            <li>
-              <span class="feature-name">Balikkan Mobil ke Samping <span class="driving-mode">(mode mengemudi)</span></span>
-              <span class="feature-key">8</span>
-            </li>
-            <li>
-              <span class="feature-name">Dorong kendaraan / Turbo <span class="driving-mode">(mode mengemudi)</span></span>
-              <span class="feature-key">9</span>
-            </li>
-            <li>
-              <span class="feature-name">Ganti Kendaraan</span>
-              <span class="feature-key">0</span>
-            </li>
-            <li>
-              <span class="feature-name">Jatuh Bebas</span>
-              <span class="feature-key">P</span>
-            </li>
-            <li>
-              <span class="feature-name">Muncul di Tanjakan (Ramp)</span>
-              <span class="feature-key">O</span>
-            </li>
-            <li>
-              <span class="feature-name">Ditabrak Truk</span>
-              <span class="feature-key">I</span>
-            </li>
-            <li>
-              <span class="feature-name">Lemparkan Kendaraan Berurutan</span>
-              <span class="feature-key">U</span>
-            </li>
-            <li>
-              <span class="feature-name">Munculkan Tempat Sampah</span>
-              <span class="feature-key">Y</span>
-            </li>
-            <li>
-              <span class="feature-name">Munculkan Pohon</span>
-              <span class="feature-key">T</span>
-            </li>
-            <li>
-              <span class="feature-name">Pembunuh Roket (Rocket Killer)</span>
-              <span class="feature-key">L</span>
-            </li>
-            <li>
-              <span class="feature-name">Bunuh CJ (Instant Death)</span>
-              <span class="feature-key">K</span>
-            </li>
-            <li>
-              <span class="feature-name">Targetkan Rudal (Missile Target)</span>
-              <span class="feature-key">J</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+      <!-- Video Review Section -->
       <div class="section-title">Video Review / Gameplay</div>
       <div class="video-container">
         <iframe
@@ -629,10 +619,10 @@
         ></iframe>
       </div>
 
-      <!-- 5. Section Get Per Feature + Bonus (ID Target untuk Smooth Scroll) -->
+      <!-- Retail Eceran Section (Target Smooth Scroll) -->
       <div id="get-per-feature" class="section-title">Get Per Feature</div>
       
-      <!-- Box Keterangan Bonus Gratis (Free Bonus) -->
+      <!-- Free Bonus Box -->
       <div class="lang-column" style="margin-bottom: 2rem; border-color: #25d366; background: rgba(37, 211, 102, 0.02);">
         <h3 style="color: #25d366;"><i class="fa-solid fa-gift"></i> FREE BONUS (Included Directly):</h3>
         <ul class="features-list">
@@ -644,10 +634,10 @@
         </ul>
       </div>
 
-      <!-- Daftar Tombol Eceran Per Fitur Menuju Link Produk -->
+      <!-- Feature Retail Links List -->
       <div style="display: flex; flex-direction: column; gap: 12px;">
         
-        <!-- Fitur 6 -->
+        <!-- Feature 6 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -658,7 +648,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 7 -->
+        <!-- Feature 7 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -669,7 +659,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 8 -->
+        <!-- Feature 8 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -680,7 +670,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 9 -->
+        <!-- Feature 9 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -691,7 +681,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 10 -->
+        <!-- Feature 10 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -702,7 +692,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 11 -->
+        <!-- Feature 11 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -713,7 +703,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 12 -->
+        <!-- Feature 12 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -724,7 +714,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 13 -->
+        <!-- Feature 13 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -735,7 +725,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 14 -->
+        <!-- Feature 14 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -746,7 +736,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 15 -->
+        <!-- Feature 15 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -757,7 +747,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 16 (Tambahan Fitur Baru) -->
+        <!-- Feature 16 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -768,7 +758,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 17 -->
+        <!-- Feature 17 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -779,7 +769,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 18 -->
+        <!-- Feature 18 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -790,7 +780,7 @@
           <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
         </a>
 
-        <!-- Fitur 19 -->
+        <!-- Feature 19 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
@@ -804,7 +794,7 @@
       </div>
 
       <footer>
-        <p>&copy; 2024 Code & Design by Firman Prayoga</p>
+        <p>&copy; 2026 Code & Design by Firman Prayoga</p>
       </footer>
     </div>
   </body>
