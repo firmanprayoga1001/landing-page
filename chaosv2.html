@@ -20,6 +20,7 @@
         /* Brand Official Colors */
         --polar: #24252a;
         --polar-border: #4e5664;
+        --saweria-color: #e5a93b;
         --telegram-color: #0088cc;
       }
 
@@ -361,6 +362,14 @@
         color: #facc15;
       }
 
+      .btn-saweria:hover {
+        border-color: var(--saweria-color);
+        background-color: rgba(229, 169, 59, 0.08);
+      }
+      .btn-saweria:hover i.fa-wallet {
+        color: var(--saweria-color);
+      }
+
       .btn-scroll-eceran:hover {
         border-color: var(--accent-glow);
         background-color: rgba(88, 166, 255, 0.05);
@@ -428,19 +437,18 @@
         }
       }
     </style>
+    <!-- POLAR EMBED SCRIPT GLOBAL -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
+      defer
+      data-auto-init
+    ></script>
   </head>
   <body>
     <div class="container">
       <a href="index.html" class="back-btn">
         <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
       </a>
-
-      <!-- <div class="product-image-container">
-        <img
-          src="https://firmanprayoga1001.github.io/landing-page/chaosv2.png"
-          alt="ChaosMod-V2 GTA SA Screenshot"
-        />
-      </div> -->
 
       <div class="product-header">
         <h1>ChaosMod-V2 GTA SA (By : Firman Prayoga)</h1>
@@ -469,33 +477,68 @@
         ></iframe>
       </div>
 
-      <!-- Main Access Buttons -->
-      <div class="action-box">
-        <!-- Download Full Access Button (Polar) -->
+      <!-- Main Access Buttons (FULL PACKS AVAILABLE HERE) -->
+      <div class="section-title">Get Full Pack Access</div>
+      <div class="action-box" style="margin-top: 0.5rem">
+        <!-- Option A: Download Full Access Button via Polar -->
         <a
-          href="https://polar.sh/checkout/polar_c_fjPTVZsGeotd79qNix7irAWVWafdBgk0EbmQD0ZuCO6"
-          target="_blank"
+          href="https://buy.polar.sh/polar_cl_RkIKU4CkJAxdMKYWafFSu40rBnsnQa2wJsvNv3p4eG3"
           class="btn-link btn-polar"
+          data-polar-checkout
+          data-polar-checkout-theme="dark"
         >
           <div class="left-content">
             <div class="icon-title-wrapper">
               <i class="fa-solid fa-gamepad"></i>
-              <span style="font-weight: bold; font-size: 1.1rem;">Download Mod (Full Pack ChaosMod_V2)</span>
+              <span style="font-weight: bold; font-size: 1.1rem"
+                >Download Mod (Full Pack ChaosMod_V2)</span
+              >
             </div>
-            <span class="btn-subtext">Get instant access to all features for both PC & Mobile versions</span>
-            <span class="btn-subtext" style="color: #facc15;">10% Discount - Code: dummy13gamemodder</span>
+            <span class="btn-subtext"
+              >Get instant access to all features via Polar (Global Credit
+              Card/Crypto)</span
+            >
+            <span class="btn-subtext" style="color: #facc15"
+              >10% Discount - Code: dummy13gamemodder</span
+            >
+          </div>
+          <i class="fa-solid fa-bolt arrow-icon" style="color: #facc15"></i>
+        </a>
+
+        <!-- Option B: Saweria Option For Local Indonesian Users -->
+        <a
+          href="https://saweria.co/USERNAME_SAWERIA_ANDA"
+          target="_blank"
+          class="btn-link btn-saweria"
+        >
+          <div class="left-content">
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-wallet"></i>
+              <span style="font-weight: bold; font-size: 1.1rem"
+                >Pembeli Indonesia (Full Pack via Saweria)</span
+              >
+            </div>
+            <span class="btn-subtext"
+              >Dukung lokal & dapatkan Full Pack via QRIS, DANA, OVO, GOPAY,
+              LinkAja</span
+            >
           </div>
           <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
 
-        <!-- Scroll to Single Features Button -->
+        <!-- Option C: Scroll to Single Features Button -->
         <a href="#get-per-feature" class="btn-link btn-scroll-eceran">
           <div class="left-content">
             <div class="icon-title-wrapper">
               <i class="fa-solid fa-tags"></i>
-              <span style="font-weight: bold; font-size: 1.1rem;">Get Single Features Only</span>
+              <span style="font-weight: bold; font-size: 1.1rem"
+                >Get Single Features Only</span
+              >
             </div>
-            <span class="btn-subtext">Choose and purchase specific single features separately as needed</span>
+            <span class="btn-subtext"
+              >Choose and purchase specific single features separately as
+              needed</span
+            >
           </div>
           <i class="fa-solid fa-arrow-down arrow-icon"></i>
         </a>
@@ -517,16 +560,26 @@
       <div class="section-title">How to Install</div>
       <div class="description-content">
         <div class="install-notice">
-          The mod will only function properly if your game has <strong>CLEO 5</strong>, <strong>CLEO+</strong>, and <strong>gta.exe v1.0 US</strong> installed. Necessary requirement files are provided in the installation steps below. If you download the <strong>ChaosMod-V2 Full Pack</strong>, all required files are already included directly inside the package.
+          The mod will only function properly if your game has
+          <strong>CLEO 5</strong>, <strong>CLEO+</strong>, and
+          <strong>gta.exe v1.0 US</strong> installed. Necessary requirement
+          files are provided in the installation steps below. If you download
+          the <strong>ChaosMod-V2 Full Pack</strong>, all required files are
+          already included directly inside the package.
         </div>
 
         <!-- Installation Block: Full Pack -->
         <div class="install-block">
-          <h3><i class="fa-solid fa-box-open"></i> Install ChaosMod-V2 Full Pack:</h3>
+          <h3>
+            <i class="fa-solid fa-box-open"></i> Install ChaosMod-V2 Full Pack:
+          </h3>
           <ol class="install-list">
             <li>Download the Chaos Mod V2 Full Pack.</li>
             <li>Extract the downloaded file.</li>
-            <li>Copy and paste everything into your main game directory, overwrite any existing files if prompted.</li>
+            <li>
+              Copy and paste everything into your main game directory, overwrite
+              any existing files if prompted.
+            </li>
             <li>Enjoy the game!</li>
           </ol>
         </div>
@@ -535,10 +588,26 @@
         <div class="install-block">
           <h3><i class="fa-solid fa-puzzle-piece"></i> Install Per Feature:</h3>
           <ol class="install-list">
-            <li>Download the required support files <a href="https://drive.google.com/file/d/1MgJBa_8467j87FPE1k5lJMBWNkvviVdc/view?usp=drive_link" target="_blank">here</a>.</li>
+            <li>
+              Download the required support files
+              <a
+                href="https://drive.google.com/drive/folders/1UiRmOXqHiyxyfrNYxplNzgdiMBW6ToDE?usp=drive_link"
+                target="_blank"
+                >here</a
+              >.
+            </li>
             <li>Download your preferred single feature file.</li>
-            <li>Extract the requirement files, copy and paste everything into your main game directory, and overwrite any existing files.</li>
-            <li>Extract the requirement files, Place the single feature <code style="color: #facc15; font-family: monospace;">.cs</code> file inside the <code style="color: #58a6ff; font-family: monospace;">cleo</code> folder located within your main game directory.</li>
+            <li>
+              Extract the requirement files, copy and paste everything into your
+              main game directory, and overwrite any existing files.
+            </li>
+            <li>
+              Extract the requirement files, Place the single feature
+              <code style="color: #facc15; font-family: monospace">.cs</code>
+              file inside the
+              <code style="color: #58a6ff; font-family: monospace">cleo</code>
+              folder located within your main game directory.
+            </li>
             <li>Enjoy the game!</li>
           </ol>
         </div>
@@ -570,19 +639,31 @@
               <span class="feature-key">5</span>
             </li>
             <li>
-              <span class="feature-name">Remove CJ's Vehicle <span class="driving-mode">(driving mode)</span></span>
+              <span class="feature-name"
+                >Remove CJ's Vehicle
+                <span class="driving-mode">(driving mode)</span></span
+              >
               <span class="feature-key">6</span>
             </li>
             <li>
-              <span class="feature-name">Spin Vehicle <span class="driving-mode">(driving mode)</span></span>
+              <span class="feature-name"
+                >Spin Vehicle
+                <span class="driving-mode">(driving mode)</span></span
+              >
               <span class="feature-key">7</span>
             </li>
             <li>
-              <span class="feature-name">Flip Car Sideways <span class="driving-mode">(driving mode)</span></span>
+              <span class="feature-name"
+                >Flip Car Sideways
+                <span class="driving-mode">(driving mode)</span></span
+              >
               <span class="feature-key">8</span>
             </li>
             <li>
-              <span class="feature-name">Boost Vehicle / Turbo <span class="driving-mode">(driving mode)</span></span>
+              <span class="feature-name"
+                >Boost Vehicle / Turbo
+                <span class="driving-mode">(driving mode)</span></span
+              >
               <span class="feature-key">9</span>
             </li>
             <li>
@@ -629,35 +710,62 @@
         </div>
       </div>
 
-      
-
       <!-- Retail Eceran Section (Target Smooth Scroll) -->
       <div id="get-per-feature" class="section-title">Get Per Feature</div>
-      
+
       <!-- Free Bonus Box -->
-      <div class="lang-column" style="margin-bottom: 2rem; border-color: #25d366; background: rgba(37, 211, 102, 0.02);">
-        <h3 style="color: #25d366;"><i class="fa-solid fa-gift"></i> FREE BONUS (Included Directly):</h3>
+      <div
+        class="lang-column"
+        style="
+          margin-bottom: 2rem;
+          border-color: #25d366;
+          background: rgba(37, 211, 102, 0.02);
+        "
+      >
+        <h3 style="color: #25d366">
+          <i class="fa-solid fa-gift"></i> FREE BONUS (Included Directly):
+        </h3>
         <ul class="features-list">
-          <li><span class="feature-name">1. Enable/Disable Chaos Mod</span> <span class="feature-key">M</span></li>
-          <li><span class="feature-name">2. Teleport to CJ's House</span> <span class="feature-key">1</span></li>
-          <li><span class="feature-name">3. Random Teleportation</span> <span class="feature-key">2</span></li>
-          <li><span class="feature-name">4. Health / Armor / Money</span> <span class="feature-key">3</span></li>
-          <li><span class="feature-name">5. Spawn Random Vehicle</span> <span class="feature-key">5</span></li>
+          <li>
+            <span class="feature-name">1. Enable/Disable Chaos Mod</span>
+            <span class="feature-key">M</span>
+          </li>
+          <li>
+            <span class="feature-name">2. Teleport to CJ's House</span>
+            <span class="feature-key">1</span>
+          </li>
+          <li>
+            <span class="feature-name">3. Random Teleportation</span>
+            <span class="feature-key">2</span>
+          </li>
+          <li>
+            <span class="feature-name">4. Health / Armor / Money</span>
+            <span class="feature-key">3</span>
+          </li>
+          <li>
+            <span class="feature-name">5. Spawn Random Vehicle</span>
+            <span class="feature-key">5</span>
+          </li>
         </ul>
       </div>
 
       <!-- Feature Retail Links List -->
-      <div style="display: flex; flex-direction: column; gap: 12px;">
-        
+      <div style="display: flex; flex-direction: column; gap: 12px">
         <!-- Feature 6 -->
         <a href="URL_LINK_PRODUK_DISINI" target="_blank" class="btn-link">
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">6</span>
-              <span style="font-weight: 500;">Remove CJ's Vehicle <span class="driving-mode">(driving mode)</span></span>
+              <span style="font-weight: 500"
+                >Remove CJ's Vehicle
+                <span class="driving-mode">(driving mode)</span></span
+              >
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 7 -->
@@ -665,10 +773,16 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">7</span>
-              <span style="font-weight: 500;">Spin CJ's Vehicle <span class="driving-mode">(driving mode)</span></span>
+              <span style="font-weight: 500"
+                >Spin CJ's Vehicle
+                <span class="driving-mode">(driving mode)</span></span
+              >
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 8 -->
@@ -676,10 +790,16 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">8</span>
-              <span style="font-weight: 500;">Flip Car Sideways <span class="driving-mode">(driving mode)</span></span>
+              <span style="font-weight: 500"
+                >Flip Car Sideways
+                <span class="driving-mode">(driving mode)</span></span
+              >
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 9 -->
@@ -687,10 +807,16 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">9</span>
-              <span style="font-weight: 500;">Boost Vehicle / Turbo <span class="driving-mode">(driving mode)</span></span>
+              <span style="font-weight: 500"
+                >Boost Vehicle / Turbo
+                <span class="driving-mode">(driving mode)</span></span
+              >
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 10 -->
@@ -698,10 +824,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">0</span>
-              <span style="font-weight: 500;">Change Vehicle</span>
+              <span style="font-weight: 500">Change Vehicle</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 11 -->
@@ -709,10 +838,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">P</span>
-              <span style="font-weight: 500;">Free Fall</span>
+              <span style="font-weight: 500">Free Fall</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 12 -->
@@ -720,10 +852,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">O</span>
-              <span style="font-weight: 500;">Spawn on Ramp</span>
+              <span style="font-weight: 500">Spawn on Ramp</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 13 -->
@@ -731,10 +866,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">I</span>
-              <span style="font-weight: 500;">Hit by a Truck</span>
+              <span style="font-weight: 500">Hit by a Truck</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 14 -->
@@ -742,10 +880,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">U</span>
-              <span style="font-weight: 500;">Throw Sequential Vehicles</span>
+              <span style="font-weight: 500">Throw Sequential Vehicles</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 15 -->
@@ -753,10 +894,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">Y</span>
-              <span style="font-weight: 500;">Spawn Trash Can</span>
+              <span style="font-weight: 500">Spawn Trash Can</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 16 -->
@@ -764,10 +908,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">T</span>
-              <span style="font-weight: 500;">Spawn Tree</span>
+              <span style="font-weight: 500">Spawn Tree</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 17 -->
@@ -775,10 +922,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">L</span>
-              <span style="font-weight: 500;">Rocket Killer</span>
+              <span style="font-weight: 500">Rocket Killer</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 18 -->
@@ -786,10 +936,13 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">K</span>
-              <span style="font-weight: 500;">Kill CJ</span>
+              <span style="font-weight: 500">Kill CJ</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
 
         <!-- Feature 19 -->
@@ -797,24 +950,38 @@
           <div class="left-content">
             <div class="icon-title-wrapper">
               <span class="feature-key">J</span>
-              <span style="font-weight: 500;">Target Missile</span>
+              <span style="font-weight: 500">Target Missile</span>
             </div>
           </div>
-          <i class="fa-solid fa-cart-shopping arrow-icon" style="font-size: 1rem !important;"></i>
+          <i
+            class="fa-solid fa-cart-shopping arrow-icon"
+            style="font-size: 1rem !important"
+          ></i>
         </a>
       </div>
 
       <!-- Contact Us Section -->
       <div class="section-title">Contact Us</div>
-      <div class="action-box" style="margin-top: 1rem;">
-        <a href="https://t.me/firmanprayoga1001" target="_blank" class="btn-link btn-telegram">
+      <div class="action-box" style="margin-top: 1rem">
+        <a
+          href="https://t.me/firmanprayoga1001"
+          target="_blank"
+          class="btn-link btn-telegram"
+        >
           <div class="left-content">
             <div class="icon-title-wrapper">
               <i class="fa-brands fa-telegram"></i>
-              <span style="font-weight: bold; font-size: 1.1rem;">Chat on Telegram</span>
+              <span style="font-weight: bold; font-size: 1.1rem"
+                >Chat on Telegram</span
+              >
             </div>
-            <span class="btn-subtext">Username: @firmanprayoga1001 | Phone: +62 856-2424-7743</span>
-            <span class="btn-subtext">Need help or want to report a bug? Feel free to drop a message.</span>
+            <span class="btn-subtext"
+              >Username: @firmanprayoga1001 | Phone: +62 856-2424-7743</span
+            >
+            <span class="btn-subtext"
+              >Need help or want to report a bug? Feel free to drop a
+              message.</span
+            >
           </div>
           <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
         </a>
