@@ -22,6 +22,11 @@
         --polar-border: #4e5664;
       }
 
+      /* Mengaktifkan efek scroll halus saat tombol diklik */
+      html {
+        scroll-behavior: smooth;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -244,9 +249,12 @@
         border: none;
       }
 
-      /* Action Button Box (Tempat Meletakkan Tombol Polar) */
+      /* Action Button Box (Tempat Meletakkan Tombol) */
       .action-box {
         margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
       }
 
       .btn-link {
@@ -302,6 +310,15 @@
       }
       .btn-polar:hover i.fa-gamepad {
         color: #facc15;
+      }
+
+      /* Style Spesifik Tombol Scroll Eceran */
+      .btn-scroll-eceran:hover {
+        border-color: var(--accent-glow);
+        background-color: rgba(88, 166, 255, 0.05);
+      }
+      .btn-scroll-eceran:hover i.fa-tags {
+        color: var(--accent-glow);
       }
 
       .arrow-icon {
@@ -374,6 +391,38 @@
           <div class="tagline">PC & MOBILE SUPPORTED</div>
           <div class="badge-unlimited">UNLIMITED ACCESS</div>
         </div>
+      </div>
+
+      <!-- 4. Tombol Akses Utama (Full Access) & Tombol Scroll Eceran -->
+      <div class="action-box">
+        <!-- Tombol Utama (Polar) -->
+        <a
+          href="https://polar.sh/checkout/polar_c_fjPTVZsGeotd79qNix7irAWVWafdBgk0EbmQD0ZuCO6"
+          target="_blank"
+          class="btn-link btn-polar"
+        >
+          <div class="left-content">
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-gamepad"></i>
+              <span style="font-weight: bold; font-size: 1.1rem;">Unduh Mod (Full Access ChaosMod_V2)</span>
+            </div>
+            <span class="btn-subtext">Dapatkan akses instan seluruh fitur untuk versi PC & Mobile</span>
+            <span class="btn-subtext" style="color: #facc15;">Discount Code: dummy13gamemodder</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+        </a>
+
+        <!-- Tombol Tambahan: Scroll ke Bagian Get Per Feature -->
+        <a href="#get-per-feature" class="btn-link btn-scroll-eceran">
+          <div class="left-content">
+            <div class="icon-title-wrapper">
+              <i class="fa-solid fa-tags"></i>
+              <span style="font-weight: bold; font-size: 1.1rem;">Beli Eceran Per Fitur</span>
+            </div>
+            <span class="btn-subtext">Pilih dan beli fitur tertentu saja secara terpisah sesuai kebutuhan Anda</span>
+          </div>
+          <i class="fa-solid fa-arrow-down arrow-icon"></i>
+        </a>
       </div>
 
       <div class="section-title">Deskripsi Mod / Mod Description</div>
@@ -580,27 +629,8 @@
         ></iframe>
       </div>
 
-      <!-- 4. Tombol Akses Utama (Full Access) -->
-      <div class="action-box">
-        <a
-          href="https://polar.sh/checkout/polar_c_fjPTVZsGeotd79qNix7irAWVWafdBgk0EbmQD0ZuCO6"
-          target="_blank"
-          class="btn-link btn-polar"
-        >
-          <div class="left-content">
-            <div class="icon-title-wrapper">
-              <i class="fa-solid fa-gamepad"></i>
-              <span style="font-weight: bold; font-size: 1.1rem;">Beli & Unduh Mod (Full Access V2)</span>
-            </div>
-            <span class="btn-subtext">Dapatkan akses instan seluruh fitur untuk versi PC & Mobile</span>
-            <span class="btn-subtext" style="color: #facc15;">Discount Code: dummy13gamemodder</span>
-          </div>
-          <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
-        </a>
-      </div>
-
-      <!-- 5. Section Get Per Feature + Bonus (All in English) -->
-      <div class="section-title">Get Per Feature</div>
+      <!-- 5. Section Get Per Feature + Bonus (ID Target untuk Smooth Scroll) -->
+      <div id="get-per-feature" class="section-title">Get Per Feature</div>
       
       <!-- Box Keterangan Bonus Gratis (Free Bonus) -->
       <div class="lang-column" style="margin-bottom: 2rem; border-color: #25d366; background: rgba(37, 211, 102, 0.02);">
